@@ -10,6 +10,8 @@
         <module>mongodemo</module>
         <module>kafkademo</module>
         <module>nettydemo</module>
+        <module>kafka-log4j</module>
+        <module>kafka-log4j</module>
     </modules>
     <packaging>pom</packaging>
 
