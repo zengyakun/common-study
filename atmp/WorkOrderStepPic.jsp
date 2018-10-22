@@ -1,7 +1,8 @@
 <%@page contentType="text/html; charset=GBK"%>
 <%
 	String attachment = request.getParameter("attachment");
-	String picUrl = "http://127.0.0.1:8081/mvcdemo/showPic";
+	// todo 上线修改为生产环境地址
+	String picUrl = "http://192.168.0.49:11003/wm_cb/showPic";
 %>
 <!DOCTYPE html>
 <html>
@@ -13,7 +14,22 @@
 var attachment = '<%=attachment%>';
 var picUrl = '<%=picUrl%>';
 window.onload = function () {
-	document.getElementById("img").src = picUrl + "?attachment=" + attachment;
+	var names = attachment.split(",");
+    var picTable = document.getElementById("picTable");
+    var newTr;
+    for(var i = 0; i < names.length; i++){
+        if(i%2 == 0){
+            newTr = picTable.insertRow();
+		}
+		var newTd = newTr.insertCell();
+        if(names.length > 1) {
+            newTd.innerHTML = '<img width="100px" height="200px" onload="AutoResizeImage(250,0,this)" src="' +
+                picUrl + '?attachment=' + names[i] + '&number=' + Math.random() + '">';
+        } else {
+            newTd.innerHTML = '<img width="100px" height="200px" onload="AutoResizeImage(500,0,this)" src="' +
+                picUrl + '?attachment=' + names[i] + '&number=' + Math.random() + '">';
+		}
+    }
 }
 function AutoResizeImage(maxWidth,maxHeight,objImg){
     var img = new Image();
@@ -43,8 +59,8 @@ function AutoResizeImage(maxWidth,maxHeight,objImg){
 }
 </script>
 <body>
-<div id="pic">
-	<img id="img" width="100px" height="200px" onload="AutoResizeImage(250,0,this)">
+<div>
+	<table id="picTable"></table>
 </div>
 </body>
 </html>
