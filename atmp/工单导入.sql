@@ -10,8 +10,7 @@ values ('115400', 'images/left/115400-1.gif', 'images/left/115400-2.gif', 'image
 */
 -- 临时
 insert into ObjectDetail(BTKey, pic1, pic2, pic3, pic4, name, URL)
-values ('115400', 'images/left/200-1.gif', 'images/left/200-2.gif', 'images/left/200-3.gif', 'images/left/200-4.gif', '批量建单', 'WorkOrderImp.jsp');
-
+values ('115400', 'images/left/200-1.gif', 'images/left/200-2.gif', 'images/left/200-3.gif', 'images/left/200-4.gif', '批量建单', 'WorkOrderImpServlet');
 
 -- ObjectRaletion表新增数据
 delete from ObjectRaletion where BTKey = '115400';

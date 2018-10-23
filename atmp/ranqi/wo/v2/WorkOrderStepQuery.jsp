@@ -90,7 +90,7 @@
 		<%}%>--%>
         <td class="NormalRow" >&nbsp;</td>
         <td class="NormalRow" >
-            <a href="javascript:void(0)" onclick='window.open("WorkOrderStepPic.jsp?attachment=<%=ws.getAttachment()%>", "_blank",
+            <a href="javascript:void(0)" onclick='window.open("ranqi/wo/v2/WorkOrderStepPic.jsp?attachment=<%=ws.getAttachment()%>", "_blank",
                 "height=450px,width=600px,scrollbars=yes,location=no");'>�鿴ͼƬ</a>
         </td>
       <%}else{%>

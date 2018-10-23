@@ -12,6 +12,7 @@
         <module>nettydemo</module>
         <module>kafka-log4j</module>
         <module>kafka-log4j</module>
+        <module>hfhujiao</module>
     </modules>
     <packaging>pom</packaging>
 

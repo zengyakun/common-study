@@ -1,33 +1,33 @@
 <%@page contentType="text/html; charset=GBK" %>
-<%@page import="java.util.List" %>
-<%@page import="com.dfsoft.ranqi.common.*,com.dfsoft.common.web.*" %>
-<%@page import="cc.dfsoft.j2ee.viewer.HTMLList" %>
-
 <%
-    String impUrl = "http://127.0.0.1:8081/mvcdemo/workOrderImp";
-    HttpContext context = new HttpContext(request, response);
-    MenuHelper helper = new MenuHelper(context);
+    String impUrl = "http://192.168.0.49:11003/wm_cb/workOrderImp";
 %>
-<%=helper.generalViewPage2(null)%>
-<style type="text/css">
-    .tdtitle {
-        background-color: #EFF3F5;
-        width: 140px;
-    }
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>批量建单</title>
+    <style type="text/css">
+        .tdtitle {
+            background-color: #EFF3F5;
+            width: 140px;
+        }
 
-    td {
-        height: 55px;
-        padding-left: 10px;
-    }
+        td {
+            height: 55px;
+            padding-left: 10px;
+        }
 
-    table, table tr th, table tr td {
-        border: solid 1px #E2E8EC;
-        border-collapse: collapse
-    }
-</style>
+        table, table tr th, table tr td {
+            border: solid 1px #E2E8EC;
+            border-collapse: collapse
+        }
+    </style>
+</head>
+<body>
 <div>
     <h1>批量建单</h1>
-    <form>
+    <form action="<%=impUrl%>" method="post" enctype="multipart/form-data">
         <table style="width: 500px;">
             <tr>
                 <td class="tdtitle">工单类型</td>
@@ -60,3 +60,5 @@
         </table>
     </form>
 </div>
+</body>
+</html>
