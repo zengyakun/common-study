@@ -1,6 +1,7 @@
 -- BusinessType表新增二级菜单
+delete from BusinessType where BTKey = '115400';
 insert into BusinessType(BTKey, BTTypeCode, BTTypeName, BTFuncCode, BTPARTITIONCode)
-values ('115400', '021204', '批量建单', NULL, '1');
+values ('115400', '021214', '工单批量录入', NULL, '1');
 
 -- ObjectDetail表新增数据
 delete from ObjectDetail where BTKey = '115400';
@@ -10,7 +11,7 @@ values ('115400', 'images/left/115400-1.gif', 'images/left/115400-2.gif', 'image
 */
 -- 临时
 insert into ObjectDetail(BTKey, pic1, pic2, pic3, pic4, name, URL)
-values ('115400', 'images/left/200-1.gif', 'images/left/200-2.gif', 'images/left/200-3.gif', 'images/left/200-4.gif', '批量建单', 'WorkOrderImpServlet');
+values ('115400', 'images/left/115400-1.gif', 'images/left/115400-2.gif', 'images/left/115400-3.gif', 'images/left/115400-4.gif', '工单批量录入', 'WorkOrderImpServlet');
 
 -- ObjectRaletion表新增数据
 delete from ObjectRaletion where BTKey = '115400';

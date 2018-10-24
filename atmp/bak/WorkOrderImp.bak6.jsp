@@ -13,7 +13,7 @@
             "<img border='0' src=\"../images/Submit.gif\" onmouseover=\"javascript:this.style.cursor='hand'\" onclick=\"submitForm();\">"
     };
 %>
-<%=helper.generalViewPage1WithMutipart("WorkOrderImpServlet", "images/table/txt/GC0109-logo.gif", "images/table/txt/115400-insert.gif", buttons)%>
+<%=helper.generalViewPage1WithMutipart("WorkOrderImpServlet", "images/table/txt/GC0109-logo.gif", "images/table/txt/yangben-insert.gif", buttons)%>
 
 <table width="100%" border="1" cellspacing="0" cellpadding="0" class="black_1">
     <tr>

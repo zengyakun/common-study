@@ -23,9 +23,11 @@ window.onload = function () {
 		}
 		var newTd = newTr.insertCell();
         if(names.length > 1) {
+            newTd.style.width = "50%";
             newTd.innerHTML = '<img width="100px" height="200px" onload="AutoResizeImage(250,0,this)" src="' +
                 picUrl + '?attachment=' + names[i] + '&number=' + Math.random() + '">';
         } else {
+            newTd.style.width = "100%";
             newTd.innerHTML = '<img width="100px" height="200px" onload="AutoResizeImage(500,0,this)" src="' +
                 picUrl + '?attachment=' + names[i] + '&number=' + Math.random() + '">';
 		}
@@ -59,8 +61,17 @@ function AutoResizeImage(maxWidth,maxHeight,objImg){
 }
 </script>
 <body>
+<style>
+	table, table tr th, table tr td {
+		border: solid 2px #939393;
+		border-collapse: collapse
+	}
+	td {
+		text-align: center;
+	}
+</style>
 <div>
-	<table id="picTable"></table>
+	<table id="picTable" width="100%"></table>
 </div>
 </body>
 </html>
