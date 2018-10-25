@@ -47,7 +47,7 @@
       <th class="HeaderRow" width="10%">到达状态</th>
       <th class="HeaderRow" width="14%">开始时间</th>
       <th class="HeaderRow" width="14%">结束时间</th>
-      <th class="HeaderRow" width="N">附件名称</th>
+      <%--<th class="HeaderRow" width="N">附件名称</th>--%>
       <th class="HeaderRow" width="7%">下载</th>
 	  <th class="HeaderRow" width="13%">&nbsp;&nbsp;外勤图片</th>
   </tr>
@@ -71,7 +71,7 @@
     <td class="NormalRow" ><%=ws.getTransferStatus() != null? ws.getTransferStatus().getDes(): ""%>&nbsp;</td>
     <td class="NormalRow" ><%=ws.getCheckoutTime() != null? sf.format(ws.getCheckoutTime()): ""%>&nbsp;</td>
     <td class="NormalRow" ><%=ws.getSubmitTime() != null? sf.format(ws.getSubmitTime()): ""%>&nbsp;</td>
-    <td class="NormalRow" ><%=ws.getAttachment() != null? ws.getAttachment(): "" %>&nbsp;</td>
+    <%--<td class="NormalRow" ><%=ws.getAttachment() != null? ws.getAttachment(): "" %>&nbsp;</td>--%>
     <%if(ws.getAttachment() != null && !"".equals(ws.getAttachment())){%>
 		<%--<%if (ws.getId().length() < 17) {%>
 			<td class="NormalRow" >

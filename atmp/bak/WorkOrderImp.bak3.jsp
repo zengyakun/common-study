@@ -14,7 +14,7 @@
     };
 %>
 <%=helper.generalViewPage1("WorkOrderImpServlet", "images/table/txt/GC0109-logo.gif", "images/table/txt/yangben-insert.gif", buttons)%>
-<script type="application/javascript" src="js/jquery-1.9.1.js"></script>
+<script type="application/javascript" src="../atest/jquery-1.9.1.js"></script>
 <style type="text/css">
     .tdtitle {
         background-color: #EFF3F5;

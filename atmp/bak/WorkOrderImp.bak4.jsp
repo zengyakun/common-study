@@ -67,8 +67,8 @@
 </div>
 <img src="css/images/default/grid/wait.gif" style="display:none" id="imgWait" />
 <%=helper.generalViewPage2(null)%>
-<script language="JavaScript" src="js/jquery-1.9.1.js"></script>
-<script language="JavaScript" src="js/jquery.form.min.js"></script>
+<script language="JavaScript" src="../atest/jquery-1.9.1.js"></script>
+<script language="JavaScript" src="../atest/js/jquery.form.min.js"></script>
 <script language="JavaScript">
     function submitForm(){
         alert(1);
