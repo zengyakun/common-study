@@ -4,6 +4,9 @@
     /* 页面初始化 */
     HttpContext context = new HttpContext(request, response);
     MenuHelper helper = new MenuHelper(context);
+    SessionHelper sh = new SessionHelper(context);
+    String csrId = sh.getCsrID();
+    String csrBmId = sh.getBumenID();
 
     String[] buttons = {
             "",
@@ -35,6 +38,8 @@
     <tr>
         <td class="DataTD">上传附件<font color="Red">*</font>(文件类型为.xls)</td>
         <td class="DataTD" ><input type='file' name="excel"></td>
+        <input type="hidden" name="inputCsrId" value="<%=csrId%>">
+        <input type="hidden" name="inputDeptId" value="<%=csrBmId%>">
     </tr>
 </table>
 <img src="css/images/default/grid/wait.gif" style="display:none" id="imgWait" />
@@ -50,8 +55,6 @@
             type:"post",
             crossDomain:true,
             dataType:"json",
-            jsonp:"jsonpCallback",
-            jsonpCallback:"jsonpCallback",
             success: function(data){
                 alert(data);
                 $("#imgWait").hide();
