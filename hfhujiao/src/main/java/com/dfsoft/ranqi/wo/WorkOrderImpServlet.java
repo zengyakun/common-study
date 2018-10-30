@@ -2,6 +2,7 @@ package com.dfsoft.ranqi.wo;
 
 import com.dfsoft.common.web.HttpContext;
 import com.dfsoft.ranqi.common.MenuHelper;
+import com.dfsoft.ranqi.common.RanqiCommonRedirectServlet;
 import com.dfsoft.ranqi.common.RanqiServletBase;
 
 import javax.servlet.http.HttpServletRequest;
@@ -14,7 +15,7 @@ import javax.servlet.http.HttpServletResponse;
  * @Date 2018/10/23 10:44
  * @Version 1.0
  **/
-public class WorkOrderImpServlet extends RanqiServletBase {
+public class WorkOrderImpServlet extends RanqiCommonRedirectServlet {
 
     public WorkOrderImpServlet() {
     }
