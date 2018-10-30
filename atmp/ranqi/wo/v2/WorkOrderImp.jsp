@@ -8,7 +8,7 @@
     String csrId = sh.getCsrID();
     String csrBmId = sh.getBumenID();
     String url = "http://192.168.0.49:11003/workOrderUpload.jsp?csrId="
-            + csrId + "&csrBmId=" + csrBmId;
+            + csrId + "&csrBmId=" + csrBmId + "&number=" + Math.random();
 
     String[] buttons = {
             "",
