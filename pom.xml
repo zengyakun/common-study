@@ -13,6 +13,8 @@
         <module>kafka-log4j</module>
         <module>kafka-log4j</module>
         <module>hfhujiao</module>
+        <module>sparkdemo</module>
+        <module>kafka-spark</module>
     </modules>
     <packaging>pom</packaging>
 
