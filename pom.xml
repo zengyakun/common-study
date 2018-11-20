@@ -13,6 +13,7 @@
         <module>kafka-log4j</module>
         <module>kafka-log4j</module>
         <module>kafka-spark</module>
+        <module>jxls-demo</module>
     </modules>
     <packaging>pom</packaging>
 
