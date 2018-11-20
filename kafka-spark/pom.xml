@@ -189,7 +189,7 @@
                 <version>2.1</version>
                 <configuration>
                     <attach>true</attach>
-                    <encoding>UTF-8</encoding>
+                    <!--<encoding>UTF-8</encoding>-->
                 </configuration>
                 <executions>
                     <execution>
