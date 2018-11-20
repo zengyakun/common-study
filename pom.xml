@@ -3,8 +3,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.example</groupId>
-    <artifactId>demo</artifactId>
+    <groupId>com.eslink</groupId>
+    <artifactId>common-study</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <modules>
         <module>mongodemo</module>
@@ -12,13 +12,11 @@
         <module>nettydemo</module>
         <module>kafka-log4j</module>
         <module>kafka-log4j</module>
-        <module>hfhujiao</module>
-        <module>sparkdemo</module>
         <module>kafka-spark</module>
     </modules>
     <packaging>pom</packaging>
 
-    <name>demo</name>
+    <name>common-study</name>
     <description>Demo project for Spring Boot</description>
 
     <parent>

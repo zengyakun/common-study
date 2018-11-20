@@ -30,7 +30,7 @@ public class TimeServerPOJO {
 
 				@Override
 				protected void initChannel(SocketChannel ch) throws Exception {
-					ch.pipeline().addLast(new TimeEncoderPOJO(), new TimeServerHandlerPOJO());
+//					ch.pipeline().addLast(new TimeEncoderPOJO(), new TimeServerHandlerPOJO());
 				}
 			})
 			.option(ChannelOption.SO_BACKLOG, 128)

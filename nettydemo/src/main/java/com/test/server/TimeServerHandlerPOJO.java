@@ -1,6 +1,6 @@
 package com.test.server;
 
-import com.coder.hello.client.Time;
+//import com.coder.hello.client.Time;
 
 import io.netty.channel.ChannelFuture;
 import io.netty.channel.ChannelFutureListener;
@@ -21,9 +21,9 @@ public class TimeServerHandlerPOJO extends ChannelInboundHandlerAdapter {
 	@Override
 	public void channelActive(io.netty.channel.ChannelHandlerContext ctx) throws Exception {
 		// 发送当前时间信息
-		ChannelFuture f = ctx.writeAndFlush(new Time());
-		// 发送完毕后关闭channel
-		f.addListener(ChannelFutureListener.CLOSE);
+//		ChannelFuture f = ctx.writeAndFlush(new Time());
+//		// 发送完毕后关闭channel
+//		f.addListener(ChannelFutureListener.CLOSE);
 	}
 
 	@Override
